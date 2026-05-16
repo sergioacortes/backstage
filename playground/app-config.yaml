@@ -97,11 +97,6 @@ auth:
       development:
         clientId: ${GITHUB_APPLICATION_CLIENT_ID}
         clientSecret: ${GITHUB_APPLICATION_CLIENT_SECRET}
-        signIn:
-          resolvers:
-            # Matches the GitHub username with the Backstage user entity name.
-            # See https://backstage.io/docs/auth/github/provider#resolvers for more resolvers.
-            - resolver: usernameMatchingUserEntityName
   # see https://backstage.io/docs/ai/mcp-actions#client-id-metadata-documents
   # to learn more about client id metadata documents
   experimentalClientIdMetadataDocuments:
